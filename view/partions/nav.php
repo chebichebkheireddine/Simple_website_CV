@@ -23,10 +23,10 @@
         <!-- call file fo you needs in you work -->
         <!-- index.php -->
         <a class="nav-link <?php //  call serv
-         echo url('/Cv_website/index.php')?'active':'';?> " href="index.php">Home</a>
+         echo url('/index')||url('/')?'active':'';?> " href="/index">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link <?php  echo url('/Cv_website/Cv.php')? ' active ':'';?>" href="Cv.php">Cv Info</a>
+        <a class="nav-link <?php  echo url('/Cv')? ' active ':'';?>" href="/Cv">Cv Info</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About US</a>
