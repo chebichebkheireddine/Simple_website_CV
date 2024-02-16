@@ -3,4 +3,5 @@
 // require("function.php");
 // echo url('jxdjk');
 require("view/Cv.view.php");
+require ("controller/Databases.php")
 ?>

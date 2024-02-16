@@ -2,8 +2,16 @@
 require("partions/nav.php");
 // Call data file It array file
 require("./data/Data.php");
-?>
+// Databasese vonrction 
+require("./controller/Databases.php");
+$config=require("./config.php");
 
+?>
+<?php
+// call class 
+$test=new Databases($config["databases"]);
+$test->fetch("SELECT *FROM post ");
+?> 
 <div class="mt-4 p-5 bg-primary text-white rounded">
   <h1>Profile</h1>
   <p>This is CV Profile For company</p>
